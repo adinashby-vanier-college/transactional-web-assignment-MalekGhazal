@@ -1,5 +1,3 @@
-import heroImg from "../../assets/hero-img.png";
-
 export default function Hero() {
   return (
     <section id="heroSection" className="hero--section">
@@ -19,7 +17,7 @@ export default function Hero() {
         <button className="btn btn-primary">Get In Touch</button>
       </div>
       <div className="hero--section--img">
-        <img src={heroImg} alt="hero-img" />
+        <img src="../assets/hero-img.png" alt="hero-img" />
       </div>
     </section>
   );
