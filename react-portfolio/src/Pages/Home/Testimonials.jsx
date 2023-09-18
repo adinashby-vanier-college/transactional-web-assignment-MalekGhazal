@@ -2,7 +2,7 @@ import data from "../../data/index.json";
 
 export default function Testimonial() {
   return (
-    <section className="testimonial--section" id="testimonial">
+    <section className="testimonial--section" id="testimonials">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <p className="sub--title">Clients Feedback</p>

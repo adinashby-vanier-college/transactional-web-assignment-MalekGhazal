@@ -5,6 +5,7 @@ import MyPortfolio from "../MyPortfolio";
 import Testimonial from "../Testimonials";
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
+import WeatherAPI from "../APIs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <MyPortfolio />
       <Testimonial />
       <ContactMe />
+      <WeatherAPI />
       <Footer />
     </>
   );

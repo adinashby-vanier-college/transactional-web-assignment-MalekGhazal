@@ -18,7 +18,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="heroSection"
-                className="text-md"
+                className="text-md footer--item"
               >
                 Home
               </Link>
@@ -31,7 +31,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="MyPortfolio"
-                className="text-md"
+                className="text-md footer--item"
               >
                 Portfolio
               </Link>
@@ -44,7 +44,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="AboutMe"
-                className="text-md"
+                className="text-md footer--item"
               >
                 About Me
               </Link>
@@ -57,7 +57,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Contact"
-                className="text-md"
+                className="text-md footer--item"
               >
                 Contact
               </Link>
@@ -69,8 +69,8 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
-                className="text-md"
+                to="testimonials"
+                className="text-md footer--item"
               >
                 Testimonials
               </Link>
@@ -183,7 +183,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Privacy_Policy"
-                className="text-sm"
+                className="text-sm footer--item"
               >
                 Privacy Policy
               </Link>
@@ -196,7 +196,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Terms_of_Service"
-                className="text-sm"
+                className="text-sm footer--item"
               >
                 Terms of Service
               </Link>
@@ -209,7 +209,7 @@ function Footer() {
                 offset={-70}
                 duration={500}
                 to="Cookies_Settings"
-                className="text-sm"
+                className="text-sm footer--item"
               >
                 Cookies Settings
               </Link>
