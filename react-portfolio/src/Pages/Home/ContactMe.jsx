@@ -4,9 +4,7 @@ export default function ContactMe() {
       <div>
         <p className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
-        <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
-        </p>
+        <p className="text-lg">Any questions or doubts, feel free to ask me.</p>
       </div>
       <form className="contact--form--container">
         <div className="container">
@@ -55,9 +53,9 @@ export default function ContactMe() {
           <span className="text-md">Choose a topic</span>
           <select id="choose-topic" className="contact--input text-md">
             <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
+            <option>Skills</option>
+            <option>Education</option>
+            <option>Personal</option>
           </select>
         </label>
         <label htmlFor="message" className="contact--label">

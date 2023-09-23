@@ -10,8 +10,9 @@ export default function Hero() {
             Developer
           </h1>
           <p className="hero--section--description">
-            Lorem ipsum dolor sit, amet elit.
-            <br /> Lorem ipsum dolor sit, amet elit.
+            Versatile software developer with experience in various fields, able
+            <br />
+            to adapt and learn quickly to new technologies and domains.
           </p>
         </div>
         <button className="btn btn-primary">Get In Touch</button>

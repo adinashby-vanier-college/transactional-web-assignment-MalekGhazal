@@ -619,6 +619,15 @@ input[type="checkbox"] {
   .footer--content {
     text-align: center;
   }
+  .hero--section--content--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills--section--card {
+    width: 500px;
+  }
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
@@ -631,8 +640,7 @@ input[type="checkbox"] {
   }
   .skills--section,
   .portfolio--container,
-  .hero--section--content,
-  .hero--section--content--box {
+  .hero--section--content {
     align-items: center;
   }
   .portfolio--container-box {
@@ -678,6 +686,15 @@ input[type="checkbox"] {
   }
   .divider {
     margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .skills--section--card {
+    width: 300px;
+  }
+  .skills-section--heading {
+    text-align: center;
   }
 }
 
@@ -916,4 +933,31 @@ input[type="checkbox"] {
 
 .content .btn:active {
   box-shadow: none;
+}
+
+/* Tech News API Section Ends Here */
+
+/* BACK TO TOP BTN */
+
+.back-to-top {
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.back-to-top:hover i {
+  color: var(--primary);
 }

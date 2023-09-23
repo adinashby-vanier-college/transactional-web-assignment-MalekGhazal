@@ -18,6 +18,12 @@ export default function Home() {
       <ContactMe />
       <WeatherAPI />
       <Footer />
+      <a
+        href="#heroSection"
+        class="shadow btn-primary rounded-circle back-to-top"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </>
   );
 }
