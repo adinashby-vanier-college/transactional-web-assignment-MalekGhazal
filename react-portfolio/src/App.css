@@ -350,11 +350,13 @@ h2 {
   width: 100%;
 }
 .portfolio--section--img {
-  border-radius: 8px;
+  border-radius: 12px;
   width: 100%;
 }
 .portfolio--section--img > img {
   width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .portfolio--section--card {
   display: flex;
@@ -364,7 +366,6 @@ h2 {
   flex: 1 0 0;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -375,6 +376,9 @@ h2 {
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
+}
+.portfolio--section--card--content > a {
+  text-decoration: none;
 }
 .portfolio--section--title {
   color: var(--heading-color);

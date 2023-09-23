@@ -29,23 +29,23 @@
     {
       "id": "1",
       "src": "../assets/placeholder-image.png",
-      "title": "Ahuse",
+      "title": "Movie Reviews",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "#"
     },
     {
       "id": "2",
       "src": "../assets/placeholder-image-1.png",
-      "title": "App Dashboard",
+      "title": "Portfolio V2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "https://github.com/MalekGhazal/second-Portfolio"
     },
     {
       "id": "3",
       "src": "../assets/placeholder-image-2.png",
-      "title": "Easy Rentn",
+      "title": "Library Management System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "link": "https://github.com/MalekGhazal/LMS-Project"
     }
   ],
   "testimonial": [
