@@ -4,8 +4,8 @@ import MySkills from "../MySkills";
 import MyPortfolio from "../MyPortfolio";
 import Testimonial from "../Testimonials";
 import ContactMe from "../ContactMe";
-import Footer from "../Footer";
 import WeatherAPI from "../WeatherAPI";
+import Footer from "../Footer";
 
 export default function Home() {
   return (

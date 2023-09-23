@@ -161,6 +161,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 .navbar--items > ul {
   list-style: none;
@@ -853,8 +854,34 @@ input[type="checkbox"] {
 .technews--section {
   height: 100vh;
   padding-top: 10rem;
-  padding-right: 10rem;
-  padding-left: 10rem;
+}
+
+.technews--title {
+  text-align: center;
+}
+
+.technews--divider {
+  height: 5px;
+  border-radius: 5px;
+  background: var(--primary);
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 8rem;
+}
+
+.technews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  margin: auto;
+  max-width: 90%;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  padding-bottom: 10rem;
 }
 
 .card {
@@ -875,7 +902,7 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  color: #e8e8e8;
+  color: var(--primary);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -923,6 +950,10 @@ input[type="checkbox"] {
 .card:hover .btn {
   color: #212121;
   background: #e8e8e8;
+}
+
+.card:hover .content {
+  color: #ffffff;
 }
 
 .content .btn:hover {
