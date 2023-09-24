@@ -8,6 +8,7 @@ function Reviews() {
     title: "",
     content: "",
   });
+  const [selectedReview, setSelectedReview] = useState(null);
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -30,12 +31,27 @@ function Reviews() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "http://localhost:5000/create",
-        formData
-      );
-      setReviews([...reviews, response.data]);
+      if (selectedReview) {
+        await axios.put(
+          `http://localhost:5000/update/${selectedReview._id}`,
+          formData
+        );
+        setReviews((prevReview) =>
+          prevReview.map((review) =>
+            review._id === selectedReview._id
+              ? { ...review, ...formData }
+              : review
+          )
+        );
+      } else {
+        const response = await axios.post(
+          "http://localhost:5000/create",
+          formData
+        );
+        setReviews([...reviews, response.data]);
+      }
       setFormData({ name: "", title: "", content: "" });
+      setSelectedReview(null);
     } catch (error) {
       console.error("Error creating review:", error);
     }
@@ -50,7 +66,13 @@ function Reviews() {
     }
   };
 
-  const handleUpdate = async (reviewID) => {};
+  const handleUpdate = (reviewID) => {
+    const selected = reviews.find((review) => review._id === reviewID);
+    if (selected) {
+      setSelectedReview(selected);
+      setFormData(selected);
+    }
+  };
 
   const lastThreeReviews = reviews.slice(-3);
 
@@ -58,6 +80,7 @@ function Reviews() {
     <div className="reviews--section">
       <form className="reviews--form" onSubmit={handleSubmit}>
         <h2 className="reviews--heading">Add a Review</h2>
+        <div className="reviews--divider"></div>
         <input
           type="text"
           name="name"
@@ -82,7 +105,7 @@ function Reviews() {
           className="review--input"
         />
         <button type="submit" className="btn btn-primary">
-          Submit
+          {selectedReview ? "Update" : "Submit"}
         </button>
       </form>
 

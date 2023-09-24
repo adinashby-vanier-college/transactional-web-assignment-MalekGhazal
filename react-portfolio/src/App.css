@@ -979,7 +979,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px 0;
 }
 
 .reviews--form {
@@ -1046,6 +1046,14 @@ input[type="checkbox"] {
 .reviews-btn {
   margin-top: 10px;
   width: 80%;
+}
+
+.reviews--divider {
+  background: var(--primary);
+  height: 4px;
+  border-radius: 15px;
+  width: 25%;
+  margin: 0 auto;
 }
 
 /* Media queries for responsiveness */
