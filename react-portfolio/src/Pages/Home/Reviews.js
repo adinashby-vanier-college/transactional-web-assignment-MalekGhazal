@@ -13,7 +13,7 @@ function Reviews() {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/reviews");
+        const response = await axios.get("http://localhost:5001/reviews");
         setReviews(response.data);
       } catch (error) {
         console.error("Error fetching reviews:", error);
@@ -33,7 +33,7 @@ function Reviews() {
     try {
       if (selectedReview) {
         await axios.put(
-          `http://localhost:5000/update/${selectedReview._id}`,
+          `http://localhost:5001/update/${selectedReview._id}`,
           formData
         );
         setReviews((prevReview) =>
@@ -45,7 +45,7 @@ function Reviews() {
         );
       } else {
         const response = await axios.post(
-          "http://localhost:5000/create",
+          "http://localhost:5001/create",
           formData
         );
         setReviews([...reviews, response.data]);
@@ -59,7 +59,7 @@ function Reviews() {
 
   const handleDelete = async (reviewID) => {
     try {
-      await axios.delete(`http://localhost:5000/remove/${reviewID}`);
+      await axios.delete(`http://localhost:5001/remove/${reviewID}`);
       setReviews(reviews.filter((review) => review._id !== reviewID));
     } catch (error) {
       console.error("Error deleting review:", error);
