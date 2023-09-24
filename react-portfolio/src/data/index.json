@@ -30,21 +30,21 @@
       "id": "1",
       "src": "../assets/placeholder-image.png",
       "title": "Movie Reviews",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "Full-stack WebApp using Java Springboot, React, and MySQL.",
       "link": "#"
     },
     {
       "id": "2",
       "src": "../assets/placeholder-image-1.png",
       "title": "Portfolio V2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "My latest Portfolio website using HTML, CSS, SCSS, BOOTSTRAP.",
       "link": "https://github.com/MalekGhazal/second-Portfolio"
     },
     {
       "id": "3",
       "src": "../assets/placeholder-image-2.png",
       "title": "Library Management System",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "LMS Desktop Application using C#, WinForms, .NET, MSSQL.",
       "link": "https://github.com/MalekGhazal/LMS-Project"
     }
   ],

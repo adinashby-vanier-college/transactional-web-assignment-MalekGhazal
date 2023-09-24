@@ -6,6 +6,7 @@ import Testimonial from "../Testimonials";
 import ContactMe from "../ContactMe";
 import WeatherAPI from "../WeatherAPI";
 import Footer from "../Footer";
+import Reviews from "../Reviews";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonial />
       <ContactMe />
       <WeatherAPI />
+      <Reviews />
       <Footer />
       <a
         href="#heroSection"
