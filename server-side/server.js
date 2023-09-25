@@ -10,7 +10,7 @@ const path = require("path");
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5003;
 
 const dbConn = process.env.DB_CONN;
 
@@ -36,6 +36,7 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+
 app.use(bodyParser.json());
 
 mongoose.connect(dbConn, {
