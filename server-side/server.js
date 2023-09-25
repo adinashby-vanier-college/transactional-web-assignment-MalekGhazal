@@ -9,7 +9,7 @@ const path = require("path");
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5003;
+const port = process.env.PORT || 5000;
 
 const dbConn =
   "mongodb+srv://MalekGhazal:MNoXolkMhbNNkgXW@moviescluster.o9hcsh7.mongodb.net/";
