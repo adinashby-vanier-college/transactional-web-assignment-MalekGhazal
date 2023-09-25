@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const axios = require("axios");
 const cors = require("cors");
 const Review = require("./review");
 const dotenv = require("dotenv");
@@ -12,7 +11,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5003;
 
-const dbConn = process.env.DB_CONN;
+const dbConn =
+  "mongodb+srv://MalekGhazal:MNoXolkMhbNNkgXW@moviescluster.o9hcsh7.mongodb.net/";
 
 const _dirname = path.dirname("");
 const buildPath = path.join(_dirname, "../react-portfolio/build");
