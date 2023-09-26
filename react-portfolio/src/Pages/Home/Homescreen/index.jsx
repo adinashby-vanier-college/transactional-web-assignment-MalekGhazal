@@ -7,6 +7,7 @@ import ContactMe from "../ContactMe";
 import WeatherAPI from "../WeatherAPI";
 import Footer from "../Footer";
 import Reviews from "../Reviews";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
@@ -20,12 +21,15 @@ export default function Home() {
       <WeatherAPI />
       <Reviews />
       <Footer />
-      <a
-        href="#heroSection"
-        class="shadow btn-primary rounded-circle back-to-top"
+      <Link
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="heroSection"
+        className="shadow btn-primary rounded-circle back-to-top"
       >
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
+        <i className="fa-solid fa-arrow-up"></i>
+      </Link>
     </>
   );
 }

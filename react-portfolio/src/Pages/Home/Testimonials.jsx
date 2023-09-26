@@ -14,6 +14,7 @@ export default function Testimonial() {
             <div className="testimonial--section--card--review">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
+                  key={index}
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
                   height="26"

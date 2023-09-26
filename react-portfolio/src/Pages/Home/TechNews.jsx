@@ -25,11 +25,16 @@ const TechNews = () => {
       <div className="technews--divider"></div>
       <div className="technews-container">
         {data.map((item, index) => (
-          <div key={index} class="card">
-            <div class="content">
-              <p class="heading">{item.name}</p>
-              <p class="para">{item.description}</p>
-              <a target="_blank" rel="noreferrer" href={item.url} class="btn">
+          <div key={index} className="card">
+            <div className="content">
+              <p className="heading">{item.name}</p>
+              <p className="para">{item.description}</p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={item.url}
+                className="btn"
+              >
                 Read more
               </a>
             </div>

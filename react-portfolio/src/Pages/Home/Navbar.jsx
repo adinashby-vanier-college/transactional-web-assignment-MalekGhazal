@@ -55,7 +55,6 @@ function Navbar() {
             <RouterLink
               onClick={closeMenu}
               activeClass="navbar--active-content"
-              spy={true}
               smooth={true}
               offset={-70}
               duration={500}
@@ -69,7 +68,6 @@ function Navbar() {
             <ScrollLink
               onClick={closeMenu}
               activeClass="navbar--active-content"
-              spy={true}
               smooth={true}
               offset={-70}
               duration={500}
@@ -83,7 +81,6 @@ function Navbar() {
             <ScrollLink
               onClick={closeMenu}
               activeClass="navbar--active-content"
-              spy={true}
               smooth={true}
               offset={-70}
               duration={500}
@@ -97,7 +94,6 @@ function Navbar() {
             <ScrollLink
               onClick={closeMenu}
               activeClass="navbar--active-content"
-              spy={true}
               smooth={true}
               offset={-70}
               duration={500}
@@ -111,7 +107,6 @@ function Navbar() {
             <RouterLink
               onClick={closeMenu}
               activeClass="navbar--active-content"
-              spy={true}
               smooth={true}
               offset={-70}
               duration={500}
@@ -126,7 +121,6 @@ function Navbar() {
       <ScrollLink
         onClick={closeMenu}
         activeClass="navbar--active-content"
-        spy={true}
         smooth={true}
         offset={-70}
         duration={500}

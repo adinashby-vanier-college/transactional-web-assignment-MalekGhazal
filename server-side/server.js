@@ -3,41 +3,32 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Review = require("./review");
-const dotenv = require("dotenv");
 const path = require("path");
-
-dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+// Middlewares ( React origin, JSON body parser)
+app.use(cors());
+app.use(bodyParser.json());
 
 const dbConn =
   "mongodb+srv://MalekGhazal:MNoXolkMhbNNkgXW@moviescluster.o9hcsh7.mongodb.net/";
 
-const _dirname = path.dirname("");
-const buildPath = path.join(_dirname, "../react-portfolio/build");
+// const _dirname = path.dirname("");
+// const buildPath = path.join(_dirname, "../react-portfolio/build");
 
-app.use(express.static(buildPath));
+// app.use(express.static(buildPath));
 
-app.get("/*", function (req, res) {
-  res.sendFile(
-    path.join(__dirname, "../react-portfolio/build/index.html"),
-    function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
-    }
-  );
-});
-
-// Middlewares ( React origin, JSON body parser)
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
-
-app.use(bodyParser.json());
+// app.get("/*", function (req, res) {
+//   res.sendFile(
+//     path.join(__dirname, "../react-portfolio/build/index.html"),
+//     function (err) {
+//       if (err) {
+//         res.status(500).send(err);
+//       }
+//     }
+//   );
+// });
 
 mongoose.connect(dbConn, {
   useNewUrlParser: true,
