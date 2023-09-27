@@ -19,7 +19,7 @@ const buildPath = path.join(_dirname, "../react-portfolio/build");
 
 app.use(express.static(buildPath));
 
-app.get("/", function (req, res) {
+app.get(["/", "/technews"], function (req, res) {
   res.sendFile(
     path.join(__dirname, "../react-portfolio/build/index.html"),
     function (err) {
