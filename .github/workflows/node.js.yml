@@ -5,7 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -17,13 +19,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-          cache-dependency-path: react-portfolio/package-lock.json
-      - run: |
-          cd react-portfolio
-          npm install
-          npm run build
       - run: |
           cd server-side
           npm install
-          pm2 restart 0
+          cd ..\react-portfolio
+          npm install
+          npm run build
