@@ -26,3 +26,9 @@ jobs:
           cd react-portfolio
           npm install
           npm run build
+          cd ..
+          cd server-side
+          pm2 stop 0
+          pm2 start 0
+          pm2 save
+          sudo service nginx restart

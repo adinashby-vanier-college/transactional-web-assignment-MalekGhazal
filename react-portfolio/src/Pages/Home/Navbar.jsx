@@ -113,7 +113,7 @@ function Navbar() {
               to="/technews"
               className="navbar--content"
             >
-              Tech News
+              News
             </RouterLink>
           </li>
         </ul>
