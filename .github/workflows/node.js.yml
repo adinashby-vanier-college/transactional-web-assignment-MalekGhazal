@@ -22,6 +22,7 @@ jobs:
       - run: |
           cd server-side
           npm install
-          cd ..\react-portfolio
+          cd ..
+          cd react-portfolio
           npm install
           npm run build
