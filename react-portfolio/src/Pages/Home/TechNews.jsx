@@ -7,11 +7,11 @@ const TechNews = () => {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/top-headlines/sources?category=technology&language=en&apiKey=${apiKey}`
+      `https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${apiKey}`
     )
       .then((res) => res.json())
       .then((result) => {
-        setData(result.sources);
+        setData(result.articles);
       })
       .catch((err) => console.log(err));
     // eslint-disable-next-line
@@ -27,8 +27,9 @@ const TechNews = () => {
         {data.map((item, index) => (
           <div key={index} className="card">
             <div className="content">
-              <p className="heading">{item.name}</p>
-              <p className="para">{item.description}</p>
+              <p className="heading">{item.source.name}</p>
+              <p className="para">{item.title}</p>
+              <p className="para">{item.publishedAt}</p>
               <a
                 target="_blank"
                 rel="noreferrer"
