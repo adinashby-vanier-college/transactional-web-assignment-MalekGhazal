@@ -21,7 +21,7 @@ const TechNews = () => {
 
   return (
     <section className="technews--section">
-      <h1 className="technews--title">Latest Tech News</h1>
+      <h1 className="technews--title">Latest News</h1>
       <div className="technews--divider"></div>
       <div className="technews-container">
         {data.map((item, index) => (
