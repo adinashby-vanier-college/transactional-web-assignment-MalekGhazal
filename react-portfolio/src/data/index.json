@@ -1,0 +1,77 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "../assets/icon-1.png",
+      "title": "Front-End",
+      "description": "HTML • CSS • JS • React • Bootstrap • Figma"
+    },
+    {
+      "id": "2",
+      "src": "../assets/icon-2.png",
+      "title": "Back-End",
+      "description": "Java • C# - Javascript • Springboot • .NET • NodeJs • REST • Firebase"
+    },
+    {
+      "id": "3",
+      "src": "../assets/icon-3.png",
+      "title": "Database",
+      "description": "SQL • MySQL • Oracle • MSSQL • NoSQL • MongoDB"
+    },
+    {
+      "id": "4",
+      "src": "../assets/icon-4.png",
+      "title": "Techs & Skills",
+      "description": "Git • GitHub • Linux • AWS • Postman • Flutter • Most IDEs"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "../assets/placeholder-image.png",
+      "title": "Movie Reviews",
+      "description": "Full-stack WebApp using Java Springboot, React, and MySQL.",
+      "link": "#"
+    },
+    {
+      "id": "2",
+      "src": "../assets/placeholder-image-1.png",
+      "title": "Portfolio V2",
+      "description": "My latest Portfolio website using HTML, CSS, SCSS, BOOTSTRAP.",
+      "link": "https://github.com/MalekGhazal/second-Portfolio"
+    },
+    {
+      "id": "3",
+      "src": "../assets/placeholder-image-2.png",
+      "title": "Library Management System",
+      "description": "LMS Desktop Application using C#, WinForms, .NET, MSSQL.",
+      "link": "https://github.com/MalekGhazal/LMS-Project"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./assets/avatar-image.jpg",
+      "description": "Malek is an exceptional software developer! His coding skills and problem-solving abilities are truly impressive. Working with him has been a pleasure, and his contributions have been invaluable to our projects.",
+      "author_name": "John Russel",
+      "author_designation": "Front-end Dev."
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./assets/avatar-image-1.jpg",
+      "description": "I've had the privilege of collaborating with Malek, and I must say, he's a phenomenal software developer. His attention to detail and commitment to delivering high-quality code is remarkable. I highly recommend him!",
+      "author_name": "Kristin Watson",
+      "author_designation": "UI/UX Designer"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./assets/avatar-image-2.jpg",
+      "description": "Malek is an outstanding software developer who consistently exceeds expectations. His work ethic and technical expertise make him an invaluable member of our team. I can't recommend him enough!",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "Project Manager"
+    }
+  ]
+}
